@@ -76,4 +76,4 @@ def main7():
     except FileNotFoundError:
         return render_template('filenotfound.html',username=username,password=password)
     return f'<h3>Your Data :</h3><p>{text}</p>'+render_template('readdata.html',username=username,password=password)
-app.run(debug=True)
+app.run()
